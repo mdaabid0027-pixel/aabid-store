@@ -6,17 +6,21 @@
 <title>Aabid Store</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
 background:#0d1117;
 color:white;
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
 }
 
 .header{
 text-align:center;
-padding:30px;
+padding:25px;
 background:linear-gradient(135deg,#0066ff,#00bfff);
 }
 
@@ -27,7 +31,7 @@ border-radius:50%;
 border:3px solid white;
 }
 
-.container{
+.section{
 max-width:1000px;
 margin:auto;
 padding:20px;
@@ -36,80 +40,109 @@ padding:20px;
 .card{
 background:#161b22;
 padding:20px;
-margin:15px 0;
+margin-bottom:20px;
 border-radius:15px;
 border:1px solid #30363d;
+}
+
+.card h2{
+color:#4da6ff;
+margin-bottom:15px;
 }
 
 .btn{
 display:inline-block;
 background:#0066ff;
 color:white;
-padding:10px 18px;
+padding:12px 22px;
 text-decoration:none;
-border-radius:8px;
+border-radius:10px;
+font-weight:bold;
 margin-top:10px;
+}
+
+.btn:hover{
+background:#0099ff;
+}
+
+.price{
+color:#00ff88;
+margin:4px 0;
 }
 </style>
 </head>
 
 <body>
 
-<header style="text-align:center;padding:20px;background:#111827;">
-  <img src="20240327_152622.png" width="120" style="border-radius:50%;">
-  <h1>🏪 AABID STORE</h1>
-  <p>Snake Engine • Kos Engine • Tournaments</p>
-</header>
+<div class="header">
+<img src="20240327_152622.png" class="logo">
+<h1>🏪 AABID STORE</h1>
+<p>Snake Engine • Kos Engine • Tournaments</p>
+</div>
 
 <div class="section">
 
 <div class="card">
 <h2>📢 Broadcast</h2>
-<p>Welcome to Aabid Store. Latest updates will appear here.</p>
+<p>Welcome to Aabid Store.</p>
+<p>Latest offers, updates and tournaments will appear here.</p>
 </div>
 
 <div class="card">
 <h2>🐍 Snake Engine</h2>
 
-<h3>Carrom Pool</h3>
-<p>3 Day - ₹XX</p>
-<p>10 Day - ₹XX</p>
-<p>30 Day - ₹XX</p>
-<p>90 Day - ₹XX</p>
+<h3>🎯 Carrom Pool</h3>
+<p class="price">3 Day - ₹XX</p>
+<p class="price">10 Day - ₹XX</p>
+<p class="price">30 Day - ₹XX</p>
+<p class="price">90 Day - ₹XX</p>
 
-<h3>8 Ball Pool</h3>
-<p>3 Day - ₹XX</p>
-<p>10 Day - ₹XX</p>
-<p>30 Day - ₹XX</p>
-<p>90 Day - ₹XX</p>
+<br>
 
-<h3>Soccer</h3>
-<p>3 Day - ₹XX</p>
-<p>10 Day - ₹XX</p>
-<p>30 Day - ₹XX</p>
-<p>90 Day - ₹XX</p>
+<h3>🎱 8 Ball Pool</h3>
+<p class="price">3 Day - ₹XX</p>
+<p class="price">10 Day - ₹XX</p>
+<p class="price">30 Day - ₹XX</p>
+<p class="price">90 Day - ₹XX</p>
 
-<a href="https://wa.me/917372067845">Buy Now</a>
+<br>
+
+<h3>⚽ Soccer</h3>
+<p class="price">3 Day - ₹XX</p>
+<p class="price">10 Day - ₹XX</p>
+<p class="price">30 Day - ₹XX</p>
+<p class="price">90 Day - ₹XX</p>
+
+<a class="btn"
+href="https://wa.me/917372067845?text=Hello%20I%20want%20to%20buy%20Snake%20Engine">
+Buy Now
+</a>
+
 </div>
 
 <div class="card">
 <h2>⚡ Kos Engine</h2>
 
-<h3>Carrom Pool</h3>
-<p>1 Day - ₹XX</p>
-<p>7 Day - ₹XX</p>
-<p>15 Day - ₹XX</p>
-<p>30 Day - ₹XX</p>
+<h3>🎯 Carrom Pool</h3>
+<p class="price">1 Day - ₹XX</p>
+<p class="price">7 Day - ₹XX</p>
+<p class="price">15 Day - ₹XX</p>
+<p class="price">30 Day - ₹XX</p>
 
-<h3>8 Ball Pool</h3>
-<p>1 Day - ₹XX</p>
-<p>7 Day - ₹XX</p>
-<p>15 Day - ₹XX</p>
-<p>30 Day - ₹XX</p>
+<br>
 
-<a href="https://wa.me/917372067845">Buy Now</a>
+<h3>🎱 8 Ball Pool</h3>
+<p class="price">1 Day - ₹XX</p>
+<p class="price">7 Day - ₹XX</p>
+<p class="price">15 Day - ₹XX</p>
+<p class="price">30 Day - ₹XX</p>
+
+<a class="btn"
+href="https://wa.me/917372067845?text=Hello%20I%20want%20to%20buy%20Kos%20Engine">
+Buy Now
+</a>
+
 </div>
-
 <div class="card">
 <h2>🏆 Tournaments</h2>
 
@@ -117,96 +150,104 @@ margin-top:10px;
 <p>Entry Fee: ₹XX</p>
 <p>Prize Pool: ₹XX</p>
 
+<br>
+
 <h3>⚡ Weekly Tournament</h3>
 <p>Entry Fee: ₹XX</p>
 <p>Prize Pool: ₹XX</p>
+
+<br>
 
 <h3>📅 Monthly Tournament</h3>
 <p>Entry Fee: ₹XX</p>
 <p>Prize Pool: ₹XX</p>
 
-<a href="https://wa.me/917372067845">Register Now</a>
+<a class="btn"
+href="https://wa.me/917372067845?text=Hello%20I%20want%20to%20register%20for%20Tournament">
+Register Now
+</a>
+
 </div>
 
 <div class="card">
 <h2>🥇 Winners</h2>
-<p>CPL Winner - Coming Soon</p>
-<p>Monthly Winner - Coming Soon</p>
-<p>Weekly Winner - Coming Soon</p>
+
+<p>🏆 CPL Winner - Coming Soon</p>
+<p>🏆 Monthly Winner - Coming Soon</p>
+<p>🏆 Weekly Winner - Coming Soon</p>
+
 </div>
 
 <div class="card">
 <h2>💰 Payment</h2>
 
-<img src="IMG_20250724_160505_967.jpg" width="250">
+<img src="IMG_20250724_160505_967.jpg"
+style="max-width:100%;border-radius:15px;">
 
-<p>Scan QR and Pay</p>
+<p style="margin-top:10px;">
+Scan QR and Complete Payment
+</p>
 
-<a href="https://wa.me/917372067845">
+<a class="btn"
+href="https://wa.me/917372067845?text=Payment%20Completed">
 Send Payment Screenshot
 </a>
+
 </div>
 
 <div class="card">
 <h2>🎁 Offers</h2>
-<p>Current offers will appear here.</p>
+
+<p>🔥 Current Offers Will Appear Here</p>
+<p>🎉 Festival Offers Will Appear Here</p>
+
 </div>
 
 <div class="card">
 <h2>🌐 Carrom Pool Store</h2>
-<a href="https://sites.google.com/view/CARROMPOOLSTORE">
+
+<a class="btn"
+href="https://sites.google.com/view/CARROMPOOLSTORE">
 Open Store
 </a>
+
 </div>
 
 <div class="card">
 <h2>🎬 Watch Trailer</h2>
-<a href="https://www.youtube.com/@Technoaabid">
+
+<a class="btn"
+href="https://www.youtube.com/@Technoaabid">
 Watch Now
 </a>
+
 </div>
 
 <div class="card">
 <h2>📺 Techno Aabid</h2>
-<a href="https://www.youtube.com/@Technoaabid">
+
+<a class="btn"
+href="https://www.youtube.com/@Technoaabid">
 Visit Channel
 </a>
+
 </div>
 
 <div class="card">
 <h2>💬 Support</h2>
-<a href="https://wa.me/917372067845">
+
+<a class="btn"
+href="https://wa.me/917372067845">
 WhatsApp Support
 </a>
-</div>
 
 </div>
 
-<div class="card">
-<h2>🏆 Tournaments</h2>
-<p>CPL Yearly</p>
-<p>Weekly Tournament</p>
-<p>Monthly Tournament</p>
 </div>
 
-<div class="card">
-<h2>💰 Payment QR</h2>
-<img src="IMG_20250724_160505_967.jpg" width="250">
-<br>
-<a class="btn" href="https://wa.me/917372067845">Send Screenshot</a>
-</div>
-
-<div class="card">
-<h2>🌐 Carrom Pool Store</h2>
-<a class="btn" href="https://sites.google.com/view/CARROMPOOLSTORE">Open Store</a>
-</div>
-
-<div class="card">
-<h2>📺 Techno Aabid</h2>
-<a class="btn" href="https://www.youtube.com/@Technoaabid">Visit Channel</a>
-</div>
-
-</div>
+<footer style="text-align:center;padding:20px;background:#111827;">
+© 2026 Aabid Store | All Rights Reserved
+</footer>
 
 </body>
 </html>
