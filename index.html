@@ -113,10 +113,7 @@ margin:4px 0;
 <p class="price">30 Day - ₹XX</p>
 <p class="price">90 Day - ₹XX</p>
 
-<a class="btn"
-href="https://wa.me/917372067845?text=Hello%20I%20want%20to%20buy%20Snake%20Engine">
-Buy Now
-</a>
+<a class="btn" href="#" onclick="openQR()">Buy Now</a>
 
 </div>
 
@@ -137,10 +134,7 @@ Buy Now
 <p class="price">15 Day - ₹XX</p>
 <p class="price">30 Day - ₹XX</p>
 
-<a class="btn"
-href="https://wa.me/917372067845?text=Hello%20I%20want%20to%20buy%20Kos%20Engine">
-Buy Now
-</a>
+<a class="btn" href="#" onclick="openQR()">Buy Now</a>
 
 </div>
 <div class="card">
@@ -162,10 +156,7 @@ Buy Now
 <p>Entry Fee: ₹XX</p>
 <p>Prize Pool: ₹XX</p>
 
-<a class="btn"
-href="https://wa.me/917372067845?text=Hello%20I%20want%20to%20register%20for%20Tournament">
-Register Now
-</a>
+<a class="btn" href="#" onclick="openQR()">Register Now</a>
 
 </div>
 
@@ -249,5 +240,38 @@ WhatsApp Support
 © 2026 Aabid Store | All Rights Reserved
 </footer>
 
+<!-- QR Popup -->
+
+<div id="qrPopup" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;">
+
+<div style="background:#161b22;width:90%;max-width:420px;margin:40px auto;padding:20px;border-radius:15px;text-align:center;">
+
+<h2>💰 Complete Payment</h2>
+
+<img src="qr.png" style="max-width:100%;border-radius:10px;">
+
+<p>Scan QR and complete payment.</p>
+
+<a class="btn"
+href="https://wa.me/917372067845?text=Hello%20I%20have%20completed%20payment%20and%20I%20am%20sending%20screenshot">
+📤 Send Screenshot
+</a>
+
+<br><br>
+
+<button class="btn" onclick="closeQR()">❌ Close</button>
+
+</div>
+</div>
+
+<script>
+function openQR(){
+document.getElementById("qrPopup").style.display="block";
+}
+
+function closeQR(){
+document.getElementById("qrPopup").style.display="none";
+}
+</script>
 </body>
 </html>
